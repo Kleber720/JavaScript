@@ -6,18 +6,61 @@
     <title>Ligando o Javascript</title>
 
     <style>
-        
+        body{
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #card{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+
+        button{
+            background-color: brown;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        button:hover{
+            background-color: red;
+            
+        }
+
+        #option{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        @keyframes mover {
+                from{
+                    transform: translate(0px, 0px);
+                }
+                to{
+                    transform: translate(300px, 0px);
+                }
+        }
     </style>
 </head>
 <body>
-
+<!--DOM-->
     <h1>Meu titulo</h1>
     <div id="card">
 
 
     </div>
 
-    <button>Mover</button>
+    <div id="option"><button>Mover</button></div>
+
     
+    <script src="aula1b.js"></script>
 </body>
 </html>
