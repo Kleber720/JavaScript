@@ -29,12 +29,23 @@ function desenharGrid(){
     
 }
 
+function plataforma(y,x){
+    context.fillStyle="rgb(100,85,90)";
+    context.fillRect(x,y,20,20);
+    
+}
+
+
+
 function desenharPersonagem(){
     context.clearRect(0,0,tela.width,tela.height);/* Limpando a tela*/
     desenharGrid()
+    plataforma(40,80);
     context.fillRect(posicaoX,posicaoY,20,20);
-    requestAnimationFrame(desenharPersonagem)
+    requestAnimationFrame(desenharPersonagem);
 };
+
+
  
  desenharPersonagem()
 document.addEventListener("keypress",(tecla)=>{
