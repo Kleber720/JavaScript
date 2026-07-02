@@ -26,8 +26,7 @@ btn_jogar.addEventListener("click", ()=>{
         if(validarUsuario(jogador.value)){
             cadastrarUsuario(jogador.value)
         }
-        
-        jogador.value="";
+        localStorage.setItem("jogador",jogador.value)
         window.location.href="jogo.html"
 
 
