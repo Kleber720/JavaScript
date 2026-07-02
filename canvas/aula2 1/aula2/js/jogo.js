@@ -11,25 +11,20 @@ let pos_x=0;
 let pos_y=0;
 
 document.addEventListener("keypress",(tecla)=>{
- 
-    //mexendo no eixo x e y do personagem para andar
- switch(tecla.key){
-    case "d":
-            posicaoX+=10;
-        break
-    case "a":
-            posicaoX-=10;
-        break
-    case "w":
-            posicaoY-=10;
-        break
-    case "s":
-         posicaoY+=10;
-    break
-    
-    default:
-        console.log("nao esta pegando")
- }
+    switch(tecla.key){
+        case "d":
+            pos_x+=quadrado;
+            break;
+        case "a":
+            pos_x-=quadrado;
+            break;
+        case "w":
+            pos_y-=quadrado;
+            break;
+        case "s":
+            pos_y+=quadrado;
+            break;
+    }
  
 })
  
