@@ -1,18 +1,16 @@
-const titulo=document.querySelector("h1");
+const titulo=document.querySelector("#titulo");
+const btnMover=document.querySelector("button");
+const card= document.querySelector("#card");
 
-const btnMover=document.querySelector("button")
+// innerText vai modificar o valor que esta dentro da tag
+// titulo.innerText="srsrsrsr"
 
-const card= document.querySelector("#card")
-
-//titulo.innerText="ssrssrsrsr" //para alterar coisas no html
-
-//criando a primeira função
+// Criando a primeira função
 function handleMover(){
-    titulo.innerText="Mudei o titulo";
-    titulo.style="color:red";
-    card.style="animation: mover 2s linear"
+   titulo.innerText="Mudei o titulo";
+   titulo.style="color:red";
+   card.style="animation: mover 2s "
 }
 
-//primeiro evento em button
-
+// Primeiro evento em button
 btnMover.addEventListener("click",handleMover)

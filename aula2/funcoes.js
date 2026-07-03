@@ -1,79 +1,81 @@
-
 var i=0;
-//operadores unarios
-/**
+// Operadores unarios
+/*   
 ++
 --
++=
+-=
+*=
+/=
 */
+// console.log(i)
+// i--;
+// console.log(i)
 
 
-//loops
-for(var i=0;i<10;i++){
-    for(var j=0;j<10;j++){
-        console.log(`${i}x${j}=${j*i}`)
-    }
-    console.log("-----------------------")
-}
+// for(var i=0;i<10;i++){
+//     for(var j=0;j<10;j++){
+//       console.log(`${i}x${j}=${j*i}`)  
+//     }
+//     console.log("---------------------------")
+// }
 
-let cont=0
+// for(var i=10;i>=0;i--){
+//     console.log(i)
+// }
 
-while(cont<10){
+// let cont=0;
 
-
-    cont++;
-}
-
-while(true){
-
-    console.log("Bem vindo")
-    console.log("1)Cadastrar\n2)sair")
-    const opcao=prompt("Escolha uma opção")
-    const flag=false;
-
-    switch(opcao){
-        case "1":
-            console.log("Tela Cadastrar")
-            break
-        case "2":
-            console.log("Sair")
-            flag=true;
-            break
-    }
-
-    if(flag){
-        break
-    }
-}
-let resposta=NaN
-
-do{
-    console.log("dentro do loop")
-    const resposta=prompt("deseja sair SIM ou NÃO")
-}while(resposta==="SIM");
-
-//função
-
-function somar(valor1,valor2){
+// while(cont<10){
 
 
-    return valor1+valor2;
-}
+//     cont++;
+// }
 
-console.log(somar(34,87));
+// while(true){
+//     console.log("Bem vindo");
+//     console.log("1)Cadastrar\n2)Sair");
+//     const opcao=prompt("Escolha uma opção");
+//     const flag=false;
+   
+//     switch(opcao){
 
+//         case "1":
+//             console.log("Tela cadastrar")
+//             break
+//         case "2":
+//             console.log("Sair")
+//             flag=true;
+//             break
+
+//     }
+
+//     if(flag){
+//         break
+//     }
+// }
+// let resposta= NaN;
+
+// do{
+//     console.log("dentro do loop Do While.");
+//     resposta=prompt("deseja sair SIM ou NÃO");
+// }while(resposta=="SIM");
+
+// function somar(valor1,valor2){
+
+//     return valor1+valor2;
+// }
+// console.log(somar(34,87))
 function calcular(valor,operacao){
 
-    return operacao(valor)
+    return operacao(valor);
 }
-
-//operações
+// Operações
 function percentual(valor){
-    return Number(valor)*0.45;
+    return Number(valor)*0.45
 }
-
 function subtrair(valor){
-
     return Number(valor)-10;
 }
 
-calcular(23,percentual)
+console.log(calcular(100,percentual))

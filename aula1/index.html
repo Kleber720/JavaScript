@@ -3,113 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
+    <title>Variaveis</title>
+
 </head>
 <body>
-   <script>
-    //Criando variaveis
-    var nome="Carlos"
-    //var idade=12
-    var altura=1.78
+
+
+  <script>
+    // Criando variaveis
+    var nome="carlos";
+    // var idade=12;
+    var altura=1.78;
     var stado=true;
     var salario;
-    var seila=NaN //not A number 
+    var seila=NaN;
 
-    let filhos=3
-    const DIA_SEMANA="Segunda" //não pode alterar o valor
+    let filhos=3;
+    const DIA_SEMANA="Segunda";
+   
 
-    //saida de dados
+    // Saida de dados
 
     console.log(nome)
 
-    //operadores matematicos
+    // Operadores matematicos
 
-    /*
-    +soma
-    -subtração
-    *multiplicação
-    / divisão
-    % modulo
-    ** potenciação
+    /*     
++ soma
+- subtração
+* multiplicação
+/ divisão 
+% modulo
+** potenciação
     */
-   console.log(23+4)
+   console.log(5**2)
 
-   //operadores relacionais
-   /*
-   === igual (verifica o valor e tipo)
-   == igual
-   > maior
-   < menor
-   >= maior ou igual
-   <= menor igual
-   !== diferente (diferença dos valores e tipos)
-   != diferente (ver a diferença de valores)
-   */
-  console.log(23=="23")
+/*
+Operadores relacionais
+ == igual ( compara os valores)
+ ===  igual (Compara os valores e o tipo)
+ > maior
+ < menor
+>= maior ou igual 
+<= menor igual 
+!== diferente ( ver a diferença dos valores e o tipo)
+!= diferente ( ver a diferença do valores)
+*/
 
-  /*
-  Operadores logicos
+console.log(23!=="23")
 
-  ! not
-  || ou
-  && and
-  */
+/*  
+Operadores logicos 
+ !  not
+ || ou 
+ && and
+*/
 
-  console.log("carlos"!=="carlos" || 23<100)
+console.log("carlos"!=="carlos" || 23<100)
 
-  // condicionais
-  //if else
-  let idade=71
-  if(idade>=18){
-        alert("você é de maior") //aparece na tela
-        console.log("você é de maior")
-  }
+// Condicionais
 
-  else{
-    alert("você é de menor")
-  }
+// if else 
+let idade=14;
+// if(idade>=18){
+//    alert("você é de maior !")
+// }else{
+//     alert("Você é de menor")
+// }
 
-  if(idade>=18 && idade<=70){
-    alert("Obrigado a votar")
-        
-  } 
-  
-  else if(idade>=16 || idade>70){
-    alert("Opcional")
+// if(idade>=18 && idade<=70){
+//     alert("você é obrigado a votar")
+// }else if(idade>=16 || idade>70){
+//  alert("Você pode votar")
+// }else{
+// alert("Você não pode votar")
+// }
 
-  }
-  else{
-    alert("Não pode votar")
-  }
-  //switch
-  let valor=8;
-  switch(valor){
+let valor=8;
+switch(valor){
     case 1:
         console.log("Domingo")
         break;
     case 2:
         console.log("Segunda")
         break;
-    case 3: 
+    case 3:
         console.log("Terça")
         break;
-    case 4: 
+    case 4:
         console.log("Quarta")
         break;
-    case 5: 
-        console.log("Quinta")
+    case 5:
+        console.log("Quintas")
         break;
-    case 6: 
+    case 6:
         console.log("Sexta")
-        break
-    case 7: 
-        console.log("Sabado")
-        break
+        break;
+    case 7:
+        console.log("Sábado")
+        break;
     default:
-        console.log("não existe este dia")
-  }
+        console.log("não existe esse dia")
+}
 
-   </script>
-    
+
+
+  </script>  
 </body>
 </html>

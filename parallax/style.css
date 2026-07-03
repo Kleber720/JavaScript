@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#c595f0;
+
+}
+
+/* Espaço apenas para gerar scroll */
+
+.espaco{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+
+}
+
+/* Cena */
+
+#animacao{
+
+    position:relative;
+
+    height:600px;
+
+    background-image:url("fundo.jpg");
+    background-size:cover;
+    background-position:center;
+
+}
+
+#animacao::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:180px;
+
+    background:linear-gradient(
+
+        transparent,
+
+        #c595f0
+
+    );
+
+}
+
+/* Camadas */
+
+.layer{
+
+    position:absolute;
+
+    inset:0;
+
+    transition:transform .15s linear;
+
+}
+
+/* Lua */
+
+#lua{
+
+    position:absolute;
+
+    width:160px;
+
+    left:50%;
+    top:50px;
+
+    transform:translateX(-50%) scale(0);
+
+    opacity:0;
+
+}
+
+/* Nuvem esquerda */
+
+#nuvem1{
+
+    position:absolute;
+
+    width:500px;
+
+    left:-500px;
+
+    top:220px;
+
+}
+
+/* Nuvem direita */
+
+#nuvem2{
+
+    position:absolute;
+
+    width:500px;
+
+    right:-500px;
+
+    top:260px;
+
+}
+
+img{
+
+    width:100%;
+
+}
+
+/* ---------- ANIMAÇÕES ---------- */
+
+.animar #lua{
+
+    animation:lua 2s forwards;
+
+}
+
+.animar #nuvem1{
+
+    animation:nuvemEsq 2s forwards;
+
+}
+
+.animar #nuvem2{
+
+    animation:nuvemDir 2s forwards;
+
+}
+
+@keyframes lua{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50%) scale(0);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(-50%) scale(1);
+
+    }
+
+}
+
+@keyframes nuvemEsq{
+
+    from{
+
+        left:-500px;
+
+    }
+
+    to{
+
+        left:150px;
+
+    }
+
+}
+
+@keyframes nuvemDir{
+
+    from{
+
+        right:-500px;
+
+    }
+
+    to{
+
+        right:150px;
+
+    }
+
+}

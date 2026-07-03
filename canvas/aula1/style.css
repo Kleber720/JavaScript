@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #tela{
-    width: 900px;
-    height: 500px;
-    border: 1px solid #000;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
 }

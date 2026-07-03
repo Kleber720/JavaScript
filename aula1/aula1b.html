@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ligando o Javascript</title>
+    <title>Ligando o javaScript</title>
 
     <style>
         body{
-            width: 100vw;
+            width: 100%;
         }
         h1{
             text-align: center;
@@ -18,48 +18,50 @@
             height: 300px;
             background-color: aqua;
             margin: 0 auto;
-        }
 
-        button{
-            background-color: brown;
-            color: white;
-            width: 300px;
-            padding: 10px;
-            cursor: pointer;
-
-        }
-
-        button:hover{
-            background-color: red;
-            
         }
 
         #option{
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+
+        }
+        button{
+            background-color: brown;
+            color: white;
+            border: none;
+            width: 300px;
+            padding: 10px;
+            cursor: pointer;
+            
         }
 
-        @keyframes mover {
-                from{
-                    transform: translate(0px, 0px);
-                }
-                to{
-                    transform: translate(300px, 0px);
-                }
+        button:hover{
+            background-color: rgb(208, 75, 75);
         }
+
+        
+        @keyframes mover{
+            from{
+                transform: translate(0px,0px);
+            }to{
+                transform: translate(300px,0px);
+            }
+
+        }
+
     </style>
+
 </head>
 <body>
-<!--DOM-->
-    <h1>Meu titulo</h1>
-    <div id="card">
-
-
+<!-- DOM -->
+    <h1 id="titulo">Meu titulo</h1>
+    <div id="card" >
     </div>
-
-    <div id="option"><button>Mover</button></div>
-
+    <div id="option">
+        <button>Mover</button>
+    </div>
     
     <script src="aula1b.js"></script>
 </body>
